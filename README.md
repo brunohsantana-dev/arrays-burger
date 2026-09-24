@@ -1,5 +1,6 @@
 # 🍔 BYTE BURGER
 
+https://brunohsantana-dev.github.io/arrays-burger/
 > Um menu interativo de hamburgueria desenvolvido para praticar JavaScript, manipulação do DOM e métodos de array — com uma interface inspirada em arcades e estética cyberpunk.
 
 ![BYTE BURGER](./assets/byte-burger-preview.png)
