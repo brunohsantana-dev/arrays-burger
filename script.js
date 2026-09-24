@@ -6,6 +6,8 @@ const discountButton = document.querySelector('.discount')
 
 const sumAllButton = document.querySelector('.sum-all')
 
+const veganButton = document.querySelector('.vegan')
+
 
 
 function showAll(productsArray) {
@@ -55,9 +57,16 @@ function sumAll() {
             <p>R$ ${totalValue.toFixed(2)}</p>
         </li>
     `
-
-   
-
 }
 
 sumAllButton.addEventListener('click', sumAll)
+
+function filterVegan() {
+
+    const veganProducts = menuOptions.filter(product => product.vegan)
+
+    showAll(veganProducts)
+
+    }
+
+veganButton.addEventListener('click', filterVegan)
