@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #07070a;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    padding: 40px 20px;
+}
+
+/* ===== HEADER ===== */
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #39ff14;
+    letter-spacing: 6px;
+    text-shadow:
+        0 0 5px #39ff14,
+        0 0 15px #39ff14;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 8px;
+    color: #b026ff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #b026ff;
+}
+
+
+/* ===== BUTTONS ===== */
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin: 40px auto;
+}
+
+button {
+    background: transparent;
+    color: #39ff14;
+
+    border: 2px solid #39ff14;
+    padding: 12px 20px;
+
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 14px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 5px #39ff14,
+        inset 0 0 5px #39ff14;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #39ff14;
+    color: #07070a;
+
+    box-shadow:
+        0 0 10px #39ff14,
+        0 0 25px #39ff14,
+        0 0 50px #39ff14;
+
+    transform: translateY(-3px);
+}
+
+
+/* ===== BURGER GRID ===== */
+
+.products-list {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+/* ===== BURGER CARD ===== */
+
+.products-list li {
+    background: #101015;
+
+    border: 2px solid #b026ff;
+    padding: 12px;
+
+    box-shadow:
+        0 0 8px #b026ff,
+        inset 0 0 8px rgba(176, 38, 255, 0.15);
+
+    transition: 0.3s;
+}
+
+.products-list li:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 0 10px #b026ff,
+        0 0 25px #b026ff;
+}
+
+.products-list img {
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    border: 1px solid #39ff14;
+}
+
+
+/* ===== PRODUCT TEXT ===== */
+
+.products-list p {
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.products-list p:first-of-type {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.products-list p:last-of-type {
+    color: #39ff14;
+    font-size: 20px;
+
+    text-shadow: 0 0 8px #39ff14;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 850px) {
+
+    .products-list {
+        grid-template-columns: repeat(2, 250px);
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .products-list {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+}
