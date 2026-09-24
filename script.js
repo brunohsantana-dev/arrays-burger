@@ -4,6 +4,10 @@ const showAllButton = document.querySelector('.show-all')
 
 const discountButton = document.querySelector('.discount')
 
+const sumAllButton = document.querySelector('.sum-all')
+
+
+
 function showAll(productsArray) {
 
     let productsHTML = ""
@@ -40,3 +44,20 @@ function discountAll() {
 }
 
 discountButton.addEventListener('click', discountAll)
+
+function sumAll() {
+
+    const totalValue = menuOptions.reduce((acc, product) => acc + product.price, 0)
+
+    productsList.innerHTML = `
+        <li>
+            <p>FULL MENU VALUE</p>
+            <p>R$ ${totalValue.toFixed(2)}</p>
+        </li>
+    `
+
+   
+
+}
+
+sumAllButton.addEventListener('click', sumAll)
