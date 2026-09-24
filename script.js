@@ -51,11 +51,16 @@ function sumAll() {
 
     const totalValue = menuOptions.reduce((acc, product) => acc + product.price, 0)
 
+    const discountedTotal = totalValue * 0.7
+
     productsList.innerHTML = `
-        <li>
-            <p>FULL MENU VALUE</p>
-            <p>R$ ${totalValue.toFixed(2)}</p>
-        </li>
+    <li class="total-card">
+        <p class="total-title">FULL MENU VALUE</p>
+        <p class="total-price">R$ ${totalValue.toFixed(2)}</p>
+        <p class="discount-label">[ 30% OFF ]</p>
+        <p class="total-discount">R$ ${discountedTotal.toFixed(2)}</p>
+        <img src="./assets/full-menu.png" alt="full-menu-image">
+     </li>
     `
 }
 
@@ -67,6 +72,6 @@ function filterVegan() {
 
     showAll(veganProducts)
 
-    }
+}
 
 veganButton.addEventListener('click', filterVegan)

@@ -6,7 +6,14 @@
 
 body {
     min-height: 100vh;
-    background: #07070a;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(0, 245, 255, 0.10), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(255, 43, 214, 0.10), transparent 30%),
+        #07070a;
+
+    background-attachment: fixed;
+
+
     color: #ffffff;
     font-family: 'Courier New', monospace;
     padding: 40px 20px;
@@ -27,10 +34,10 @@ h1 {
 h2 {
     text-align: center;
     margin-top: 8px;
-    color:  #ff2bd6;
+    color: #ff2bd6;
     font-size: 18px;
     letter-spacing: 3px;
-    text-shadow: 0 0 10px  #ff2bd6;
+    text-shadow: 0 0 10px #ff2bd6;
 }
 
 
@@ -84,7 +91,7 @@ button:hover {
     list-style: none;
 
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
 
     justify-content: center;
     gap: 30px;
@@ -99,11 +106,11 @@ button:hover {
 .products-list li {
     background: #101015;
 
-    border: 2px solid  #ff2bd6;
+    border: 2px solid #ff2bd6;
     padding: 12px;
 
     box-shadow:
-        0 0 8px  #ff2bd6,
+        0 0 8px #ff2bd6,
         inset 0 0 8px rgba(176, 38, 255, 0.15);
 
     transition: 0.3s;
@@ -113,8 +120,8 @@ button:hover {
     transform: translateY(-7px);
 
     box-shadow:
-        0 0 10px  #ff2bd6,
-        0 0 25px  #ff2bd6;
+        0 0 10px #ff2bd6,
+        0 0 25px #ff2bd6;
 }
 
 .products-list img {
@@ -133,12 +140,14 @@ button:hover {
     margin-top: 10px;
     font-weight: bold;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .products-list p:first-of-type {
     color: #ffffff;
     font-size: 17px;
 }
+
 
 .products-list p:last-of-type {
     color: #00f5ff;
@@ -174,4 +183,107 @@ button:hover {
         max-width: 280px;
     }
 
+}
+
+.total-card {
+    grid-column: 1 / -1;
+    width: 600px;
+    max-width: 90vw;
+    justify-self: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.products-list .total-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #00f5ff;
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+.products-list .total-title {
+    color: #ff2bd6;
+    font-size: 24px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #ff2bd6;
+}
+
+.products-list .old-price {
+    color: #888;
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-top: 12px;
+}
+
+.products-list .discount-label {
+    color: #ff2bd6;
+    font-size: 18px;
+    margin-top: 8px;
+    text-shadow: 0 0 8px #ff2bd6;
+}
+
+.products-list .discounted-total {
+    color: #00f5ff;
+    font-size: 36px;
+    margin-top: 5px;
+    text-shadow:
+        0 0 5px #00f5ff,
+        0 0 15px #00f5ff;
+}
+
+.products-list .system-message {
+    color: #ff2bd6;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-shadow: 0 0 8px #ff2bd6;
+}
+
+
+.system-ready {
+    grid-column: 1 / -1;
+    width: 100%;
+    text-align: center;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin-top: 40px;
+}
+
+.products-list .system-status {
+    color: #00f5ff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00f5ff;
+}
+
+.products-list .system-message {
+    color: #ff2bd6;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+.products-list .system-message {
+    color: #ff2bd6 !important;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-shadow: 0 0 8px #ff2bd6 !important;
 }
