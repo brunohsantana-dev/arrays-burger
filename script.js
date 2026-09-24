@@ -4,17 +4,17 @@ const showAllButton = document.querySelector('.show-all')
 
 const discountButton = document.querySelector('.discount')
 
-function showAll() {
+function showAll(productsArray) {
 
     let productsHTML = ""
 
-    menuOptions.forEach(product => {
+    productsArray.forEach(product => {
 
         productsHTML += `
             <li>
                 <img src="${product.src}">
                 <p>${product.name}</p>
-                <p>R$ ${product.price}</p>
+                <p>R$ ${product.price.toFixed(2)}</p>
             </li>
         `
     })
@@ -22,7 +22,7 @@ function showAll() {
     productsList.innerHTML = productsHTML
 }
 
-showAllButton.addEventListener('click', showAll)
+showAllButton.addEventListener('click', () => showAll(menuOptions))
 
 function discountAll() {
 
@@ -35,5 +35,8 @@ function discountAll() {
 
     })
 
+    showAll(discountedProducts)
+
 }
 
+discountButton.addEventListener('click', discountAll)
