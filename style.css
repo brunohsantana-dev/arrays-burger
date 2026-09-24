@@ -17,20 +17,20 @@ body {
 h1 {
     text-align: center;
     font-size: 48px;
-    color: #39ff14;
+    color: #00f5ff;
     letter-spacing: 6px;
     text-shadow:
-        0 0 5px #39ff14,
-        0 0 15px #39ff14;
+        0 0 5px #00f5ff,
+        0 0 15px #00f5ff;
 }
 
 h2 {
     text-align: center;
     margin-top: 8px;
-    color: #b026ff;
+    color:  #ff2bd6;
     font-size: 18px;
     letter-spacing: 3px;
-    text-shadow: 0 0 10px #b026ff;
+    text-shadow: 0 0 10px  #ff2bd6;
 }
 
 
@@ -47,9 +47,9 @@ h2 {
 
 button {
     background: transparent;
-    color: #39ff14;
+    color: #00f5ff;
 
-    border: 2px solid #39ff14;
+    border: 2px solid #00f5ff;
     padding: 12px 20px;
 
     font-family: 'Courier New', monospace;
@@ -59,20 +59,20 @@ button {
     cursor: pointer;
 
     box-shadow:
-        0 0 5px #39ff14,
-        inset 0 0 5px #39ff14;
+        0 0 5px #00f5ff,
+        inset 0 0 5px #00f5ff;
 
     transition: 0.3s;
 }
 
 button:hover {
-    background: #39ff14;
+    background: #00f5ff;
     color: #07070a;
 
     box-shadow:
-        0 0 10px #39ff14,
-        0 0 25px #39ff14,
-        0 0 50px #39ff14;
+        0 0 10px #00f5ff,
+        0 0 25px #00f5ff,
+        0 0 50px #00f5ff;
 
     transform: translateY(-3px);
 }
@@ -99,11 +99,11 @@ button:hover {
 .products-list li {
     background: #101015;
 
-    border: 2px solid #b026ff;
+    border: 2px solid  #ff2bd6;
     padding: 12px;
 
     box-shadow:
-        0 0 8px #b026ff,
+        0 0 8px  #ff2bd6,
         inset 0 0 8px rgba(176, 38, 255, 0.15);
 
     transition: 0.3s;
@@ -113,8 +113,8 @@ button:hover {
     transform: translateY(-7px);
 
     box-shadow:
-        0 0 10px #b026ff,
-        0 0 25px #b026ff;
+        0 0 10px  #ff2bd6,
+        0 0 25px  #ff2bd6;
 }
 
 .products-list img {
@@ -123,7 +123,7 @@ button:hover {
 
     object-fit: cover;
 
-    border: 1px solid #39ff14;
+    border: 1px solid #00f5ff;
 }
 
 
@@ -141,10 +141,10 @@ button:hover {
 }
 
 .products-list p:last-of-type {
-    color: #39ff14;
+    color: #00f5ff;
     font-size: 20px;
 
-    text-shadow: 0 0 8px #39ff14;
+    text-shadow: 0 0 8px #00f5ff;
 }
 
 
