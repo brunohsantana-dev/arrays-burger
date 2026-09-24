@@ -1,5 +1,9 @@
 const productsList = document.querySelector('.products-list');
 
+const showAllButton = document.querySelector('.show-all')
+
+const discountButton = document.querySelector('.discount')
+
 function showAll() {
 
     let productsHTML = ""
@@ -18,4 +22,18 @@ function showAll() {
     productsList.innerHTML = productsHTML
 }
 
-showAll()
+showAllButton.addEventListener('click', showAll)
+
+function discountAll() {
+
+    const discountedProducts = menuOptions.map(product => {
+
+        return {
+            ...product,
+            price: product.price * 0.9
+        }
+
+    })
+
+}
+
