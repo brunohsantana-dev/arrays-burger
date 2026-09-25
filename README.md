@@ -1,127 +1,63 @@
 # 🍔 BYTE BURGER
 
+A responsive and interactive burger menu built around JavaScript array methods, with a retro arcade / cyberpunk-inspired interface.
+
+🔗 **Live Demo:**  
 https://brunohsantana-dev.github.io/arrays-burger/
-> Um menu interativo de hamburgueria desenvolvido para praticar JavaScript, manipulação do DOM e métodos de array — com uma interface inspirada em arcades e estética cyberpunk.
 
 ![BYTE BURGER](./assets/byte-burger-preview.png)
 
-## 🇧🇷 Português
+---
 
-### Sobre o projeto
+## About the project
 
-**BYTE BURGER** nasceu como um projeto prático durante meus estudos de JavaScript no DevClub.
+**Byte Burger** started as a JavaScript practice project and evolved into a complete interactive menu with its own visual identity.
 
-O objetivo inicial era praticar quatro métodos importantes de arrays:
+The original exercise focused on four array methods:
 
-`forEach()` • `map()` • `reduce()` • `filter()`
+`forEach()` · `map()` · `reduce()` · `filter()`
 
-Em vez de manter apenas o layout original do exercício, decidi transformar o projeto em algo com identidade própria, criando uma interface inspirada em **arcades retrô e estética cyberpunk**, além de adicionar responsividade, imagens personalizadas e algumas melhorias na experiência do usuário.
-
-### ⚡ Funcionalidades
-
-**[ ALL BURGERS ]**  
-Exibe todos os produtos do menu utilizando `forEach()`.
-
-**[ 10% OFF ]**  
-Utiliza `map()` para criar um novo array com 10% de desconto nos preços, sem alterar os produtos originais.
-
-**[ FULL MENU 30% OFF ]**  
-Utiliza `reduce()` para calcular o valor total do menu e aplica 30% de desconto ao combo completo.
-
-**[ VEGAN MODE ]**  
-Utiliza `filter()` para exibir apenas os produtos veganos.
-
-### 🧠 Conceitos praticados
-
-- Manipulação do DOM
-- `querySelector()`
-- `addEventListener()`
-- Funções e parâmetros
-- Arrays e objetos
-- `forEach()`
-- `map()`
-- `reduce()`
-- `filter()`
-- Spread Operator (`...`)
-- Template Literals
-- `innerHTML`
-- `toFixed()`
-- CSS Grid e Flexbox
-- Media Queries
-- CSS Animations com `@keyframes`
-- Design responsivo para desktop e mobile
-
-### 🛠️ Tecnologias
-
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-
-### 🎮 Interface
-
-A identidade visual foi inspirada em interfaces de **arcade, terminais retrô e cyberpunk**, utilizando principalmente cyan, magenta e fundos escuros.
-
-A tela inicial simula um terminal aguardando uma interação:
-
-```text
-> SYSTEM READY_
-
-SELECT A MENU MODE TO CONTINUE
-```
-
-A partir daí, cada botão executa uma operação diferente sobre os dados do menu e atualiza dinamicamente a interface.
+I expanded the project with a custom interface, responsive behavior, original visuals and different menu interactions to turn the exercise into a more complete web experience.
 
 ---
 
-## 🇺🇸 English
+## ✨ Features
 
-### About the project
+### 🍔 All Burgers
+Displays the full menu using `forEach()`.
 
-**BYTE BURGER** started as a practical project while studying JavaScript at DevClub.
+### 💸 10% Off
+Uses `map()` to create a discounted version of the menu without changing the original data.
 
-The original goal was to practice four important JavaScript array methods:
+### 🎮 Full Menu 30% Off
+Uses `reduce()` to calculate the full menu value and apply a discount.
 
-`forEach()` • `map()` • `reduce()` • `filter()`
+### 🌱 Vegan Mode
+Uses `filter()` to display only vegan options.
 
-Instead of keeping the original exercise layout, I decided to give the project its own identity by creating a **retro arcade / cyberpunk inspired interface**, adding responsive design, custom visuals and a few improvements to the user experience.
+---
 
-### ⚡ Features
+## 🧠 What I practiced
 
-**[ ALL BURGERS ]**  
-Displays all menu products using `forEach()`.
-
-**[ 10% OFF ]**  
-Uses `map()` to create a new array with discounted prices without modifying the original products.
-
-**[ FULL MENU 30% OFF ]**  
-Uses `reduce()` to calculate the total menu value and applies a 30% discount to the complete combo.
-
-**[ VEGAN MODE ]**  
-Uses `filter()` to display only vegan products.
-
-### 🧠 Concepts practiced
-
-- DOM manipulation
-- `querySelector()`
-- `addEventListener()`
-- Functions and parameters
 - Arrays and objects
 - `forEach()`
 - `map()`
 - `reduce()`
 - `filter()`
-- Spread Operator (`...`)
-- Template Literals
-- `innerHTML`
-- `toFixed()`
+- Functions and parameters
+- DOM manipulation
+- Event handling
+- Template literals
+- Spread operator
+- Dynamic HTML rendering
+- Responsive layouts
 - CSS Grid and Flexbox
-- Media Queries
-- CSS animations with `@keyframes`
-- Responsive desktop and mobile design
+- Media queries
+- CSS animations
 
-### 🛠️ Technologies
+---
+
+## 🛠️ Technologies
 
 - HTML5
 - CSS3
@@ -129,20 +65,64 @@ Uses `filter()` to display only vegan products.
 - Git
 - GitHub
 
----
-
-## 🚀 Project status
-
-**Completed — V1**
-
-The project was built as part of my journey learning web development and JavaScript fundamentals.
-
-Future improvements may be added as I continue learning new technologies.
+No JavaScript frameworks or libraries were used.
 
 ---
 
-### 👨‍💻 Author
+## 🎨 Design
 
-**Bruno Henrique Santana**
+The interface was inspired by:
 
-Building projects and documenting my journey into software development.
+- retro arcade machines
+- cyberpunk visuals
+- terminal-style interfaces
+- neon cyan and magenta color palettes
+
+The goal was to give a simple JavaScript exercise a stronger visual identity and make the interaction feel more like a small product than a classroom task.
+
+---
+
+## 📌 Project status
+
+**V1 completed**
+
+The current version delivers the original learning goals while adding responsive design and a custom user experience.
+
+Future improvements may be added as my development skills evolve.
+
+---
+
+<details>
+<summary><strong>🇧🇷 Sobre o projeto em português</strong></summary>
+
+<br>
+
+**Byte Burger** é um menu interativo de hamburgueria criado durante meus estudos de JavaScript.
+
+O projeto começou como um exercício para praticar:
+
+`forEach()` · `map()` · `reduce()` · `filter()`
+
+A partir disso, desenvolvi uma identidade visual própria inspirada em arcades retrô e cyberpunk, além de adicionar responsividade e melhorias na experiência do usuário.
+
+### Funcionalidades
+
+- Exibição completa do menu
+- Aplicação de desconto nos produtos
+- Cálculo do valor total do menu
+- Filtro de produtos veganos
+- Interface dinâmica
+- Layout responsivo
+
+O projeto foi desenvolvido com HTML, CSS e JavaScript puro.
+
+</details>
+
+---
+
+## 👨‍💻 Author
+
+**Bruno Santana**
+
+[LinkedIn](https://www.linkedin.com/in/brunohsantana) ·
+[GitHub](https://github.com/brunohsantana-dev)
